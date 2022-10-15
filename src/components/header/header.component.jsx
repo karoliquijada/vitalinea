@@ -2,7 +2,7 @@ import headerImage from "../../assets/products/img-bote-fresa.png";
 import stampCalorias from "../../assets/stamps/img-100-kcal.png";
 import stampSello from "../../assets/stamps/img-sello-avalado.png";
 import arrow from "../../assets/icons/flecha.png";
-import bgStrawberry3 from "../../assets/strawberry/img-fresas-3.png";
+import bgStrawberry2 from "../../assets/strawberry/img-fresas-2.png";
 import bgStrawberry4 from "../../assets/strawberry/img-fresas-4.png";
 import "./header.styles.scss";
 
