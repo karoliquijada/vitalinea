@@ -1,5 +1,5 @@
-import logo from '../../assets/img-logo-vitalinea.png'
-import burguerMenu from '../../assets/icon_menu.svg'
+import logo from '../../assets/logos/img-logo-vitalinea.png'
+import burguerMenu from '../../assets/icons/icon_menu.svg'
 import './menu.styles.scss'
 
 const Menu = () => {
