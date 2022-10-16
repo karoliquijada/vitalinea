@@ -1,15 +1,24 @@
 .header {
-  background: linear-gradient(to bottom, #f9e6e6, #ebacac);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 86px;
-  /*  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 88%);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 88%);
- */
+  padding: 86px 0 24px;
+  height: 790px;
+  filter: drop-shadow(-1px 6px 20px rgba(197, 197, 197, 0.8));
 
-  &_img {
+  &__bg {
+    position: absolute;
+    background: linear-gradient(to bottom, #f9e6e6, #ebacac);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 92%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 92%);
+    height: inherit;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+  }
+
+  &__img {
     height: 300px;
     margin-top: 24px;
 
@@ -18,7 +27,7 @@
     }
   }
 
-  &_flavors {
+  &__flavors {
     margin-top: -48px;
     font-size: 14px;
 
@@ -39,7 +48,7 @@
     }
   }
 
-  &_text {
+  &__text {
     width: 90%;
 
     &--title {
@@ -56,7 +65,7 @@
     }
   }
 
-  &_button {
+  &__button {
     width: 90%;
     background-color: #78246d;
     color: #fff;
@@ -66,7 +75,7 @@
     margin-top: 20px;
   }
 
-  &_stamps {
+  &__stamps {
     margin-top: 36px;
 
     img {
@@ -74,7 +83,7 @@
     }
   }
 
-  &_arrow {
+  &__arrow {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,14 +93,16 @@
     border-radius: 50%;
     overflow: hidden;
     margin-top: 24px;
+    position: absolute;
+    bottom: 0;
   }
 
-  &_strawberrys {
+  &__strawberrys {
     &--top {
-        position: absolute;
-        top: 5px;
-        right: 0;
-        z-index: 1;
+      position: absolute;
+      top: 5px;
+      right: 0;
+      z-index: 1;
     }
   }
 }

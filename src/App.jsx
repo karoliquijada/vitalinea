@@ -1,18 +1,12 @@
-import Menu from "./components/menu/menu.component";
-import Header from "./components/header/header.component";
-import Information from "./components/information/information.component";
-import Products from "./components/products/products.component"
-import Footer from "./components/footer/footer.component";
-import "./styles/global.scss"
+import { Routes, Route, Link } from "react-router-dom";
+import Home from "./pages/home/home.pages";
 
 const App = () => {
   return (
     <div className="App">
-      <Menu />
-      <Header/>
-      <Information/>
-      <Products/>
-      <Footer/>
+      <Routes>
+        <Route path="/" element={<Home/>} />
+      </Routes>
     </div>
   );
 };
