@@ -137,14 +137,11 @@
 @media (min-width: 1024px) {
   .header {
     &__img {
-      margin-top: 104px;
       padding-right: 84px;
       height: 550px;
     }
 
-    &__text {
-      width: 100%;
-  
+    &__text {  
       &--title {
         font-size: 40px;
       }

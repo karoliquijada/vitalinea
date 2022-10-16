@@ -1,5 +1,7 @@
 .products__container {
     display: flex;
+    justify-content: center;
+    align-content: center;
     flex-wrap: nowrap;
     overflow-x: scroll;
     margin: 64px auto 0;
@@ -29,4 +31,9 @@
             }
         }
     }
+}
+
+
+@media (min-width: 768px) {
+
 }
