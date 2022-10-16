@@ -1,0 +1,46 @@
+.products {
+    background-image: url(../../assets/background/bg-familia-vitalinea.png);
+    padding: 40px 0 104px;
+
+    &__title {
+        font-weight: 300;
+        font-size: 22px;
+        text-transform: uppercase;
+        text-align: center;
+        color: var(--primary);
+    }
+
+    &__container {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        margin-top: 64px; 
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        &--card {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex-direction: column;
+            width: 300px;
+            margin: 0 20px;
+            font-size: 11px;
+            color: var(--primary);
+            font-weight: 300;
+
+            &-img {
+                width: 150px;
+                height: auto;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+}
