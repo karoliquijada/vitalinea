@@ -13,13 +13,15 @@ const Footer = () => {
           <img src={footerLogo} alt="vitalinea logo" />
         </div>
       </div>
-      <div className="footer__terms">
-        <a href="">Términos y condiciones |</a>
-        <a href="">Políticas de Privacidad |</a>
-        <a href="">Aviso de privacidad</a>
-      </div>
-      <div className="footer__copyright">
-        <p>Danone de México 2017 ©. Todos los derechos reservados 2017</p>
+      <div className="footer__info">
+        <div className="footer__terms">
+          <a href="">Términos y condiciones |</a>
+          <a href="">Políticas de Privacidad |</a>
+          <a href="">Aviso de privacidad</a>
+        </div>
+        <div className="footer__copyright">
+          <p>Danone de México 2017 ©. Todos los derechos reservados 2017</p>
+        </div>
       </div>
     </footer>
   );

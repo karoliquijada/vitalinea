@@ -1,7 +1,6 @@
 .products__container {
     display: flex;
-    justify-content: center;
-    align-content: center;
+    justify-content: flex-start;
     flex-wrap: nowrap;
     overflow-x: scroll;
     margin: 64px auto 0;
@@ -35,5 +34,22 @@
 
 
 @media (min-width: 768px) {
+    .products__container {
+        overflow: hidden;
+        justify-content: center;
+        align-content: center;
+
+        &--card {
+            font-size: 22px;
+
+            &-img {
+                width: 240px;
+                height: auto;
+    
+            }
+        }
+
+
+    }
 
 }
