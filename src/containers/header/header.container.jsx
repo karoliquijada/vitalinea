@@ -2,6 +2,7 @@ import headerImage from "../../assets/products/img-bote-fresa.png";
 import stampCalorias from "../../assets/stamps/img-100-kcal.png";
 import stampSello from "../../assets/stamps/img-sello-avalado.png";
 import arrow from "../../assets/icons/flecha.png";
+import Button from "../../components/button/button.component";
 import bgStrawberry2 from "../../assets/strawberry/img-fresas-2.png";
 import bgStrawberry4 from "../../assets/strawberry/img-fresas-4.png";
 import "./header.styles.scss";
@@ -28,8 +29,8 @@ const Header = () => {
           quieren probar algo sano, rico y práctico.
         </p>
       </div>
-
-      <a className="header__button">Comprar en Walmart</a>
+      
+      <Button>Comprar en Walmart</Button>
 
       <div className="header__stamps">
         <img src={stampSello} alt="sello" />
