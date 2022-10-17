@@ -37,7 +37,9 @@
 
   &__strawberrys {
     &--four,
-    &--five {
+    &--five,
+    &--eight,
+    &--nine {
       display: none;
     }
 
@@ -109,13 +111,37 @@
           width: 100%;
         }
       }
+
+      &--eight {
+        width: 120px;
+        position: absolute;
+        right: 0;
+        bottom: -200px;
+
+        img {
+          width: 100%;
+        }
+      }
     }
   }
 }
 
 @media (min-width: 1024px) {
-  .information__strawberrys--five {
-    position: absolute;
-    display: block;
+  .information__strawberrys {
+    &--five {
+      position: absolute;
+      display: block;
+    }
+
+    &--eight {
+      width: 140px;
+    }
+
+    &--nine {
+      display: block;
+      position: absolute;
+      bottom: -250px;
+      left: 300px;
+    }
   }
 }

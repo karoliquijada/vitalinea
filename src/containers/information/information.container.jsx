@@ -2,6 +2,8 @@ import strawberry4 from "../../assets/strawberry/img-fresas-4.png";
 import strawberry5 from "../../assets/strawberry/img-fresas-5.png";
 import strawberry6 from "../../assets/strawberry/img-fresas-6.png";
 import strawberry7 from "../../assets/strawberry/img-fresas-7.png";
+import strawberry8 from "../../assets/strawberry/img-fresas-8.png";
+import strawberry9 from "../../assets/strawberry/img-fresas-9.png";
 import Table from "../../components/table/table.component";
 import "./information.styles.scss";
 
@@ -20,6 +22,12 @@ const Information = () => {
         </div>
         <div className="information__strawberrys--seven">
           <img src={strawberry7} alt="fresa" />
+        </div>
+        <div className="information__strawberrys--eight">
+          <img src={strawberry8} alt="fresa" />
+        </div>
+        <div className="information__strawberrys--nine">
+          <img src={strawberry9} alt="fresa" />
         </div>
       </div>
       <div className="information__container">
