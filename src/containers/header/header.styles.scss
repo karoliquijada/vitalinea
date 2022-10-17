@@ -93,13 +93,29 @@
     bottom: 0;
   }
 
-  &__strawberrys {
-    &--top {
+  &__strawberrys  {
+
+    &--one {
       position: absolute;
-      top: 5px;
-      right: 0;
-      z-index: 1;
+      top: 72px;
+      left: -84px;
+      z-index: -1;
+      transform: rotate(-60deg);
     }
+
+    &--two {
+      width: 200px;
+      overflow: hidden;
+      position: absolute;
+      top: 0px;
+      right: 0;
+      z-index: -1;
+    }
+
+    &--three {
+      display: none;
+    }
+    
   }
 }
 
@@ -129,6 +145,34 @@
         font-size: 17px;
       }
     }  
+
+    &__strawberrys  {  
+      &--two  {
+        width: 350px;
+        position: absolute;
+        right: 150px;
+        top: 0;
+        z-index: -1;
+
+        img {
+          width: 100%;
+        };
+      }
+
+      &--three {
+        width: 139px;
+        position: absolute;
+        display: block;
+        bottom: -16px;
+        right: 137px;
+
+        img {
+          width: 100%;
+        }
+       
+      }
+      
+    }
   }
 
 }

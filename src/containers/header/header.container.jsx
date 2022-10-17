@@ -3,15 +3,26 @@ import stampCalorias from "../../assets/stamps/img-100-kcal.png";
 import stampSello from "../../assets/stamps/img-sello-avalado.png";
 import arrow from "../../assets/icons/flecha.png";
 import Button from "../../components/button/button.component";
+import bgStrawberry3 from "../../assets/strawberry/img-fresas-3.png";
 import bgStrawberry2 from "../../assets/strawberry/img-fresas-2.png";
-import bgStrawberry4 from "../../assets/strawberry/img-fresas-4.png";
+import bgStrawberry5 from "../../assets/strawberry/img-fresas-5.png";
 import "./header.styles.scss";
 
 const Header = () => {
   return (
     <header id="header" className="header">
       <div className="header__bg"></div>
-
+      <div className="header__strawberrys">
+        <div className="header__strawberrys--one">
+          <img src={bgStrawberry5} alt="fresa" />
+        </div>
+        <div className="header__strawberrys--two">
+          <img src={bgStrawberry2} alt="fresa" />
+        </div>
+        <div className="header__strawberrys--three">
+          <img src={bgStrawberry3} alt="fresa" />
+        </div>
+      </div>
       <div className="header__img">
         <img src={headerImage} alt="bebida fresa" />
       </div>

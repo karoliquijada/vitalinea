@@ -4,13 +4,12 @@ const Table = () => {
   return (
     <div className="ingredients__table">
       <table>
-        <thead>
+        <thead></thead>
+        <tbody>
           <tr>
             <td>Contenido energético kJ/kcal</td>
             <td>413,2/97,9</td>
           </tr>
-        </thead>
-        <tbody>
           <tr>
             <td>Proteínas (g) </td>
             <td>5.3</td>
@@ -47,13 +46,12 @@ const Table = () => {
             <td>Calcio (mg) </td>
             <td>199.6</td>
           </tr>
-        </tbody>
-        <tfoot>
           <tr>
             <td>%VNR* </td>
             <td>22</td>
           </tr>
-        </tfoot>
+        </tbody>
+        <tfoot></tfoot>
       </table>
     </div>
   );

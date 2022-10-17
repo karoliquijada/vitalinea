@@ -1,10 +1,27 @@
-/* import headerImage from "../../assets/products/img-bote-fresa.png"; */
+import strawberry4 from "../../assets/strawberry/img-fresas-4.png";
+import strawberry5 from "../../assets/strawberry/img-fresas-5.png";
+import strawberry6 from "../../assets/strawberry/img-fresas-6.png";
+import strawberry7 from "../../assets/strawberry/img-fresas-7.png";
 import Table from "../../components/table/table.component";
 import "./information.styles.scss";
 
 const Information = () => {
   return (
     <section className="information">
+      <div className="information__strawberrys">
+        <div className="information__strawberrys--four">
+          <img src={strawberry4} alt="fresa" />
+        </div>
+        <div className="information__strawberrys--five">
+          <img src={strawberry5} alt="fresa" />
+        </div>
+        <div className="information__strawberrys--six">
+          <img src={strawberry6} alt="fresa" />
+        </div>
+        <div className="information__strawberrys--seven">
+          <img src={strawberry7} alt="fresa" />
+        </div>
+      </div>
       <div className="information__container">
         <div className="information__container--left">
           <h2 className="information__title">Información nutrimental</h2>

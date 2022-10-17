@@ -1,5 +1,5 @@
 .information {
-  width: 90%;
+  position: relative;
   margin: 90px auto 64px;
   display: flex;
   flex-direction: column;
@@ -8,6 +8,7 @@
   font-size: 14px;
 
   &__title {
+    padding: 0 24px;
     font-weight: 300;
     color: var(--primary);
     letter-spacing: 2px;
@@ -16,15 +17,48 @@
   }
 
   &__text--description {
+    padding: 0 24px;
     font-size: 14px;
     font-weight: 700;
   }
 
+  &__container--right {
+    margin-top: 48px;
+  }
+
   &__ingredients {
     margin-top: 24px;
+    padding: 0 24px;
 
     span {
       font-weight: 700;
+    }
+  }
+
+  &__strawberrys {
+    &--four,
+    &--five {
+      display: none;
+    }
+
+    &--six {
+      width: 100px;
+      overflow: hidden;
+      position: absolute;
+      top: -32px;
+      right: 0;
+      z-index: -1;
+    }
+
+    &--seven {
+      width: 100px;
+      overflow: hidden;
+      position: absolute;
+      bottom: 200px;
+
+      img {
+        width: 100%;
+      }
     }
   }
 }
@@ -54,5 +88,34 @@
         width: auto;
       }
     }
+
+    &__strawberrys {
+      &--four {
+        width: 110px;
+        display: block;
+        position: absolute;
+        top: -350px;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      &--seven {
+        width: 120px;
+        bottom: -180px;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .information__strawberrys--five {
+    position: absolute;
+    display: block;
   }
 }
