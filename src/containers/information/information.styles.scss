@@ -1,6 +1,6 @@
 .information {
   width: 90%;
-  margin: 90px auto 28px;
+  margin: 90px auto 64px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,7 +17,7 @@
 
   &__text--description {
     font-size: 14px;
-    font-weight: normal;
+    font-weight: 700;
   }
 
   &__ingredients {
@@ -44,7 +44,7 @@
       flex-direction: row;
       align-items: flex-start;
       justify-content: center;
-      column-gap: 24px;
+      column-gap: 48px;
 
       &--left {
         width: 20%;
